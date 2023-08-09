@@ -1,0 +1,90 @@
+{{#> layouts/page title="Edit profile" }}
+<a href="/index.html">Main</a>
+    <div class="profile-page">
+        {{#profile}}
+            <img id="avatar" src="/src/partials/images/avatar.png" alt="">
+            <h3>{{firstname}}</h3>
+            {{>tables/table}}
+            {{>buttons/button label="Save"}}
+        {{/profile}}
+
+
+        
+    </div>
+{{/ layouts/page}}
+
+{{#avatarChange}}
+    
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>Upload image</h3>
+        
+
+        {{!-- <a href="">Choose file from local storage</a> --}}
+        <input type="file" name="avatar" accept="image/png, image/jpeg" />
+
+        {{>buttons/button label="Apply"}}
+        {{!-- {{>spans/span label="Choose file from local storage"}} --}}
+    </div>
+
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3>File is downloaded</h3>
+        
+        {{>spans/span label="myphoto.jpg"}}
+        {{!-- <a href="">Choose file from local storage</a> --}}
+        
+
+        {{>buttons/button label="Apply"}}
+        {{!-- {{>spans/span label="Choose file from local storage"}} --}}
+    </div>
+
+    <div class="modal-content">
+        
+        <span class="close">&times;</span>
+        {{>titles/title-danger label="Error, try else"}}
+        {{!-- <h3 style="color:red">Error, try else</h3> --}}
+        {{!-- {{>spans/span-danger label="Error, try else"}} --}}
+        {{!-- <a href="">Choose file from local storage</a> --}}
+        <input type="file" name="avatar" accept="image/png, image/jpeg" />
+
+        {{>buttons/button label="Apply"}}
+        {{!-- {{>spans/span label="Choose file from local storage"}} --}}
+    </div>
+
+    </div>
+{{/avatarChange}}
+
+<script>
+    function myFunction() {
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("avatar");
+    console.log(btn)
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+}
+
+myFunction()
+</script>

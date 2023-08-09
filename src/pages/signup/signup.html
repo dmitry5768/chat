@@ -1,0 +1,25 @@
+{{#> layouts/page title="Sign up Page" }}
+<a href="/index.html">Main</a>
+    <div class="signup-page">
+        {{#card}}
+            <h3>Register</h3>
+            {{> input/input type="email" placeholder="Email" }}
+            {{> input/input type="text" placeholder="Username" }}
+            {{> input/input type="text" placeholder="First name" }}
+            {{> input/input type="text" placeholder="Last name" }}
+            {{> input/input type="password" placeholder="Password" }}
+            {{> input/input type="password" placeholder="Password again" }}
+            <br>
+            {{> spans/span-danger label="Passwords do not match"}}
+            <br>
+            <form action="/src/pages/chat/chat.html">
+                {{> buttons/button label="Register" }}    
+            </form>
+            
+            <form action="/src/pages/chat/chat.html">
+                {{> buttons/button-bordered label="Sign in" }}
+            </form>
+            
+        {{/card}}
+    </div>
+{{/ layouts/page}}

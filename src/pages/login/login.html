@@ -1,0 +1,28 @@
+{{#> layouts/page title="Login Page"}}
+    <a href="/index.html">Main</a>
+    <div class="login-page">
+        {{#card}}
+            <h3>Login</h3>
+            {{> input/input type="email" name="email" placeholder="Email" }}
+            
+            {{> input/input type="password" name="password" placeholder="Password" }}
+            <br>
+            {{> spans/span-danger label="Username or Password is invalid"}}
+            <br>
+           {{!--  <form action="/index.html">
+                <button type="submit">Login</button>
+            </form> --}}
+            <form style="width:100%;" action="/src/pages/chat/chat.html">
+                {{> buttons/button  label="Login" }}
+            </form>
+
+            <form style="width:100%;" action="/src/pages/signup/signup.html">
+                {{> buttons/button-bordered label="Register" }}
+            </form>
+             
+            
+            
+            
+        {{/card}}
+    </div>
+{{/ layouts/page}}

@@ -1,0 +1,17 @@
+{{#> layouts/page title="Profile" }}
+<a href="/index.html">Main</a>
+    <div class="profile-page">
+        {{#profile}}
+            <img src="/src/partials/images/avatar.png" alt="">
+            {{!-- {{>titles/title label={{firstname}} }} --}}
+            <h3>{{firstname}}</h3>
+            {{>tables/table}}
+            <br><br>
+            {{>tables/table-action}}
+            
+            
+           
+            
+        {{/profile}}
+    </div>
+{{/ layouts/page}}
