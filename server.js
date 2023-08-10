@@ -1,7 +1,9 @@
 import path from 'path';
 import { fileURLToPath } from 'url';
+
 import express from 'express';
-// import { engine } from "express-handlebars";
+
+
 
 const app = express();
 const PORT = 3000;
@@ -9,10 +11,10 @@ const PORT = 3000;
 const currentDir = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(currentDir);
 
-app.use(express.static(__dirname + '/'));
+app.use(express.static(__dirname + '/dist'));
 
 app.get('*', function (_, res) {
-    res.sendFile('/index.html', {
+    res.sendFile('/dist/index.html', {
         root: __dirname + '/',
     });
 });

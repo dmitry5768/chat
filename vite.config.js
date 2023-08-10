@@ -9,7 +9,20 @@ import avatarChange from "./src/layouts/avatar-change/avatar-card";
  export default defineConfig({
     
     build: {
-        outDir:resolve(__dirname, 'dist'),
+        rollupOptions:{
+            input: {
+                index: resolve(__dirname,'index.html'),
+                login: resolve(__dirname, 'src/pages/login/login.html'),
+                signup: resolve(__dirname, 'src/pages/signup/signup.html'),
+                chat: resolve(__dirname, 'src/pages/chat/chat.html'),
+                404: resolve(__dirname, 'src/pages/errors/404.html'),
+                500: resolve(__dirname, 'src/pages/errors/500.html'),
+                profileedit: resolve(__dirname, 'src/pages/profile/profile-edit.html'),
+                profilepasswordchange: resolve(__dirname, 'src/pages/profile/profile-password-change.html'),
+                profile: resolve(__dirname, 'src/pages/profile/profile.html')
+            }
+        }
+        // outDir:resolve(__dirname, 'dist'),
     },
     plugins: [handlebars(
         {
