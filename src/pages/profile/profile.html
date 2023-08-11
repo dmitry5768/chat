@@ -3,8 +3,9 @@
     <div class="profile-page">
         {{#profile}}
             <img src="/src/partials/images/avatar.png" alt="">
-            {{>titles/title label={{firstname}} }}
-            <h3>{{firstname}}</h3>
+            {{!-- {{>titles/title label={{firstname}} }} --}}
+            {{>titles/title label='John' }}
+            {{!-- <h3>{{firstname}}</h3> --}}
             {{>tables/table}}
             <br><br>
             {{>tables/table-action}}
