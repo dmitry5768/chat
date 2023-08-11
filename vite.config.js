@@ -26,7 +26,7 @@ import avatarChange from "./src/layouts/avatar-change/avatar-card";
     },
     plugins: [handlebars(
         {
-            partialDirectory: resolve(__dirname,"src\\partials"),
+            partialDirectory: resolve(__dirname,'src','partials'),
             helpers: {
                 card,profile,avatarChange
         
