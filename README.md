@@ -3,7 +3,7 @@
 Используется сброщик Vite
 
 Проект можно собрать командой #npm run start (используется модуль express)
-Команда для разработки #npm run dev (в качестве web сервера выступает сам Vite)....,
+Команда для разработки #npm run dev (в качестве web сервера выступает сам Vite)....
 
 Ссылки на netlify:
 https://amazing-crepe-e5bffa.netlify.app/
