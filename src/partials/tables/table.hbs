@@ -1,32 +1,35 @@
 <table class="table">
     <tr>
         <td>Email</td>
-        {{!-- <td name="email" class="profile-value">{{email}}</td> --}}
-        <td> {{> input/input-table type="email" name="email"  value="john_deer99@gmail.com"}}</td>
+        <td name="email" class="profile-value">{{email}}</td>
+        {{!-- <td> {{> input/input-table type="email" name="email"  value="john_deer99@gmail.com"}}</td> --}}
     </tr>
     
     <tr>
         <td>Username</td>
-        <td>{{> input/input-table type="text" name="login" value="john_deer99" }}</td>
+        <td name="login" class="profile-value">{{username}}</td>
+        {{!-- <td>{{> input/input-table type="text" name="login" value="john_deer99" }}</td> --}}
     </tr>
     <tr>
         <td>First name</td>
-        <td>{{> input/input-table type="text" name="first_name" value="John" }}</td>
+        <td name="login" class="profile-value">{{firstname}}</td>
+        {{!-- <td>{{> input/input-table type="text" name="first_name" value="John" }}</td> --}}
     </tr>
     <tr>
         <td>Last name</td>
-        <td>{{> input/input-table type="text" name="second_name" value="Deere" }}</td>
+        <td class="profile-value">{{lastname}}</td>
+        {{!-- <td>{{> input/input-table type="text" name="second_name" value="Deere" }}</td> --}}
     </tr>
     <tr>
         <td>Chat name</td>
-        {{!-- <td name="display_name" class="profile-value">{{chatname}}</td> --}}
-        <td>{{>input/input-table name="display_name" value="John Deere" }}</td>
+        <td class="profile-value">{{chatname}}</td>
+        {{!-- <td>{{>input/input-table name="display_name" value="John Deere" }}</td> --}}
     </tr>
     <tr>
         <td>Phone</td>
-        {{!-- <td name="phone" class="profile-value">{{phone}}</td> --}}
+        <td name="phone" class="profile-value">{{phone}}</td>
         {{!-- <td>{{>input/input type="text" name="phone"}}</td> --}}
-        <td>{{>input/input-table type="text" name="phone" value='+7 (909) 967 30 30' }}</td>
+        {{!-- <td>{{>input/input-table type="text" name="phone" value='+7 (909) 967 30 30' }}</td> --}}
     </tr>
     
     {{!-- <tr><td><span>Edit profile</span></td></tr>
