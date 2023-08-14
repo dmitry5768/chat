@@ -6,15 +6,15 @@
     padding: 8px 16px;
   
     background: #ffffff;
-    color: #5656f3;
+    color: var(--blue);
     border-radius: 4px;
-    border: 1px solid #5656f3;
+    border: 1px solid var(--blue);
     cursor: pointer;
     width: 100%;
   }
 
 .button-bordered:hover {
-  background-color: #5656f3;
+  background-color: var(--blue);
   color: #fff;
-  border: 1px solid #5656f3;
+  border: 1px solid var(--blue);
 }

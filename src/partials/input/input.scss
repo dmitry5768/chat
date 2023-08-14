@@ -1,13 +1,22 @@
-.input {
-    width: fit-content;
+.input, .input-table{
+  width: fit-content;
   
-    margin: 8px 0;
-  
-    border: none;
-    outline: none;
-    border-bottom: 1px solid rgba(86, 86, 243, 0.46);
-    display: block;
-    &:focus {
-      border-bottom-color: #5656f3
-    }
+  margin: 8px 0;
+
+  border: none;
+  outline: none;
+  // border-bottom: 1px solid rgba(86, 86, 243, 0.46);
+  display: block;
+  &:focus {
+    border-bottom-color: var(--blue);
   }
+}
+
+.input {
+  // border-bottom: 1px solid rgba(86, 86, 243, 0.46);
+  border-bottom: 1px solid var(--blue);
+}
+
+.input-table {
+  border: none;
+}

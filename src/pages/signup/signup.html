@@ -5,12 +5,12 @@
         {{#card}}
             <h3>Register</h3>
             <form action="">
-                {{> input/input type="email" placeholder="Email" }}
-                {{> input/input type="text" placeholder="Username" }}
-                {{> input/input type="text" placeholder="First name" }}
-                {{> input/input type="text" placeholder="Last name" }}
-                {{> input/input type="password" placeholder="Password" }}
-                {{> input/input type="password" placeholder="Password again" }}
+                {{> input/input type="email" name="email" placeholder="Email" }}
+                {{> input/input type="text" name="login" placeholder="Username" }}
+                {{> input/input type="text" name="first_name" placeholder="First name" }}
+                {{> input/input type="text" name="second_name" placeholder="Last name" }}
+                {{> input/input type="password" name="password" placeholder="Password" }}
+                {{> input/input type="password" name="password_repeat" placeholder="Password again" }}
                 <br>
                 {{> spans/span-danger label="Passwords do not match"}}
                 <br>
